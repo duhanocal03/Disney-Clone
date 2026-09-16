@@ -38,7 +38,7 @@ function Header() {
               <HeaderItem name={ item.name}  Icon={item.icon} />
           ))}
           </div>
-          <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/BD2FA0F3965617FC515E3CEBD3AD51C00CCFFBF98F96448EFE46B82867FCE542/scale?format=png&width=64" alt="Prodile Logo" className='w-[40px] rounded-full' />
+          <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/BD2FA0F3965617FC515E3CEBD3AD51C00CCFFBF98F96448EFE46B82867FCE542/scale?format=png&width=64" alt="Prodile Logo" className='w-[40px] rounded-full cursor-pointer' />
     </div>
   )
 }
