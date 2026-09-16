@@ -1,6 +1,7 @@
 import logo from '../../assets/Images/logo.png'
 import { HiHome, HiMagnifyingGlass, HiStar, HiPlayCircle, HiTv } from "react-icons/hi2"
-import { HiPlus, HiDotsVertical } from 'react-icons/hi';
+import { HiPlus, } from 'react-icons/hi';
+// HiDotsVertical
 import HeaderItem from '../HeaderItem/HeaderItem';
 function Header() {
     const menu = [

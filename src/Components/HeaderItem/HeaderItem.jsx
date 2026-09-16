@@ -5,8 +5,6 @@ function HeaderItem({name, Icon}) {
             <h2>{name}</h2>
       </div>
   )
-      
-  
 }
 
 export default HeaderItem 
