@@ -1,0 +1,12 @@
+function HeaderItem({name, Icon}) {
+    return (
+        <div className='flex items-center gap-3 text-white font-semibold text-[15px] cursor-pointer hover:underline underline-offset-8 decoration-2 transition-all'>
+            <Icon />
+            <h2>{name}</h2>
+      </div>
+  )
+      
+  
+}
+
+export default HeaderItem 
