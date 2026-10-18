@@ -1,8 +1,10 @@
+import  { useState } from 'react'
 import logo from '../../assets/Images/logo.png'
 import { HiHome, HiMagnifyingGlass, HiStar, HiPlayCircle, HiTv } from "react-icons/hi2"
 import { HiPlus, HiDotsVertical } from 'react-icons/hi';
 import HeaderItem from '../HeaderItem/HeaderItem';
 function Header() {
+    const [toggle, setToggle] = useState(false)
     const menu = [
         {
             name: 'HOME',
@@ -44,10 +46,15 @@ function Header() {
         
         <div className='flex md:hidden gap-5 items-center'>
         {menu.map((item, index) =>index<3&& (
+          <HeaderItem key={index} name={''} Icon={item.icon} />
+        ))}
+              <div className=' relative md:hidden' onClick={()=>setToggle(!toggle)}>
+            <HeaderItem name={''} Icon={HiDotsVertical} />
+        {toggle? <div className='absolute mt-3 bg-[#121212] border-[1px] border-gray-800 p-4 px-6 py-5'>
+              {menu.map((item, index) =>index>=3&& (
           <HeaderItem key={index} name={item.name} Icon={item.icon} />
         ))}
-              <div className=' md:hidden'>
-                 <HeaderItem name={''} Icon={HiDotsVertical}/>     
+            </div>:null} 
               </div>
       </div>
     </div>
